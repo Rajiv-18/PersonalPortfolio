@@ -1,0 +1,10 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio of Rajiv Lomada",
+  "scripts": {
+    "start": "npx http-server . -p 8080"
+  },
+  "author": "Rajiv Lomada",
+  "license": "MIT"
+}
