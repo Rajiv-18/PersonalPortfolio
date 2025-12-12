@@ -203,25 +203,26 @@
           <!--Contact-->
       <section id="contact" class="contact container">
         <h2>Contact</h2>
-        <p class="muted">Prefer email? <a href="mailto:itzrajiv18@gmail.com">itzrajiv18@gmail.com</a></p>
+        <p class="muted">Prefer to use your email client? Email me directly at <a href="mailto:itzrajiv18@gmail.com">itzrajiv18@gmail.com</a> (this is my address).</p>
 
-        <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true">
+        <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success">
           <input type="hidden" name="form-name" value="contact">
+          <p class="hidden" style="display:none"><label>Don’t fill this out if you're human: <input name="bot-field"></label></p>
           <label>
-            Name
-            <input type="text" name="name" required>
+            Your Name
+            <input type="text" name="name" placeholder="Your full name" required>
           </label>
           <label>
-            Email
-            <input type="email" name="email" required>
+            Your Email (where I can reply)
+            <input type="email" name="email" placeholder="your@email.com" required>
           </label>
           <label>
-            Message
-            <textarea name="message" rows="4" required></textarea>
+            Message (what would you like to tell me?)
+            <textarea name="message" rows="4" placeholder="Hi Rajiv — I am reaching out because..." required></textarea>
           </label>
           <div class="form-actions">
             <button class="btn" type="submit">Send Message</button>
-            <small class="muted">Or email me at <a href="mailto:itzrajiv18@gmail.com">itzrajiv18@gmail.com</a></small>
+            <small class="muted">Or email me directly at <a href="mailto:itzrajiv18@gmail.com">itzrajiv18@gmail.com</a></small>
           </div>
         </form>
       </section>
